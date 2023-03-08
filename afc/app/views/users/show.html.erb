@@ -9,8 +9,10 @@
     <div class='col-md-8 offset-md-1'>
       <h2>Books</h2>
       <%= render 'books/index',books: @books %>
-      <h2>投稿数の前日比・前週比</h2>
+      <h2>７日間分の投稿数</h2>
       <%= render 'post_count', book: @books %>
+      <%= render 'chart', book: @books %>
+
     </div>
   </div>
 </div>
